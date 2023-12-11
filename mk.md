@@ -60,8 +60,8 @@ A estrutura da rede foi projetada seguindo o modelo de topologia estrela, no qua
 Os computadores da Rede 1 foram configurados para rede 10.100.101.0/24 com Ip's de Classe A de 10.100.101.2 a 10.100.101.11
 
 <div style="display: flex; justify-items: center; align-items: center; flex-direction: column;" >
-  <img src="./assets/rede-1.png" style="display: block; width: 70%; margin: 0 auto;" alt="Organização" >
-  <img src="./assets/cf-A.png" style="display: block; width: 70%; margin: 0 auto;" alt="Organização" >
+  <img src="./assets/rede-1.png" width="500" style="display: block;  margin: 0 auto;" alt="Organização" >
+  <img src="./assets/cf-A.png" width="600" style="display: block;  margin: 0 auto;" alt="Organização" >
 </div>
 
 #### Configuração da Rede 2
@@ -69,8 +69,8 @@ Os computadores da Rede 1 foram configurados para rede 10.100.101.0/24 com Ip's 
 Os computadores da Rede 2 foram configurados para rede 172.16.0.0/24 com Ip's de Classe A de 172.16.0.2 a 172.16.0.11
 
 <div style="display: flex; justify-items: center; align-items: center; flex-direction: column;" >
-  <img src="./assets/rede-2.png" style="display: block; width: 70%; margin: 0 auto;" alt="Organização" >
-  <img src="./assets/cf-b.png" style="display: block; width: 70%; margin: 0 auto;" alt="Organização" >
+  <img src="./assets/rede-2.png" width="500" style="display: block;  margin: 0 auto;" alt="Organização" >
+  <img src="./assets/cf-b.png" width="600" style="display: block;  margin: 0 auto;" alt="Organização" >
 </div>
 
 #### Configuração da Rede 3
@@ -78,8 +78,8 @@ Os computadores da Rede 2 foram configurados para rede 172.16.0.0/24 com Ip's de
 Os computadores da Rede 3 foram configurados para rede 192.168.2.0/24 com Ip's de Classe A de 192.168.2.2 a 192.168.2.6
 
 <div style="display: flex; justify-items: center; align-items: center; flex-direction: column;" >
-  <img src="./assets/rede-3.png" style="display: block; width: 70%; margin: 0 auto;" alt="Organização" >
-  <img src="./assets/cf-c.png" style="display: block; width: 70%; margin: 0 auto;" alt="Organização" >
+  <img src="./assets/rede-3.png" width="500" style="display: block;  margin: 0 auto;" alt="Organização" >
+  <img src="./assets/cf-c.png" width="600" style="display: block;  margin: 0 auto;" alt="Organização" >
 </div>
 
 #### Conectando as três Redes
@@ -90,18 +90,93 @@ Para interligar as três redes foi empregado um roteador para interligar as trê
  <ul>
  <li style="margin-bottom:30px;">
   Rede 1 (Classe A)
-   <img src="./assets/r1.png" style="display: block;" alt="Organização" >
+   <img src="./assets/r1.png" width="600" style="display: block;" alt="Organização" >
  </li>
 
  <li style="margin-bottom:30px;">
   Rede 2 (Classe B)
-    <img src="./assets/r2.png" style="display: block;" alt="Organização" >
+    <img src="./assets/r2.png" width="600" style="display: block;" alt="Organização" >
  </li>
 
  <li>
   Rede 3 (Classe C)
-    <img src="./assets/r3.png" style="display: block;" alt="Organização" >
+    <img src="./assets/r3.png" width="600" style="display: block;" alt="Organização" >
  </li>
  
  </ul>
 </div>
+
+## Testes de Ping
+
+Nesta etapa vamos utilizar a ferramenta que é usada para testar a conectividade entre dois dispositivos em uma rede, como computadores ou servidores.
+
+### Entre os Computadores na Rede 1 (Classe A):
+
+- **Na mesma Rede**
+<div>
+  <img src="./assets/t-A-1.png" width="500" height="700"  alt="Organização" >
+  <img src="./assets/t-A-2.png" width="500" height="700" alt="Organização" >
+   <img src="./assets/t-A-3.png"width="500" height="200"  alt="Organização" >
+</div>
+
+- **Com a Rede de Classe B**
+<div>
+  <img src="./assets/t-A-4.png" width="500" height="700"  alt="Organização" >
+</div>
+
+- **Com a Rede de Classe C**
+<div>
+  <img src="./assets/t-A-5.png" width="500" height="700"  alt="Organização" >
+</div>
+
+#### Entre os Computadores na Rede 2 (Classe B):
+
+- **Na mesma Rede**
+<div>
+  <img src="./assets/t-B-1.png" width="500" height="700"  alt="Organização" >
+  <img src="./assets/t-B-2.png" width="500" height="700" alt="Organização" >
+   <img src="./assets/t-B-3.png"width="500" height="200"  alt="Organização" >
+</div>
+
+- **Com a Rede de Classe A**
+<div>
+  <img src="./assets/t-B-4.png" width="500" height="700"  alt="Organização" >
+</div>
+
+- **Com a Rede de Classe C**
+<div>
+  <img src="./assets/t-B-5.png" width="500" height="700"  alt="Organização" >
+</div>
+
+#### Entre os Computadores na Rede 3 (Classe C):
+
+- **Na mesma Rede**
+<div>
+  <img src="./assets/t-C-1.png" width="500" height="700"  alt="Organização" >
+</div>
+
+- **Com a Rede de Classe A**
+<div>
+  <img src="./assets/t-C-4.png" width="500" height="700"  alt="Organização" >
+</div>
+
+- **Com a Rede de Classe B**
+<div>
+  <img src="./assets/t-C-5.png" width="500" height="700"  alt="Organização" >
+</div>
+
+Após a realização abrangente dos testes utilizando o comando "ping" entre os computadores nas redes designadas, os resultados fornecem uma visão esclarecedora do estado de conectividade. Notavelmente, constatamos que todos os testes efetuados dentro de uma mesma rede (Classe A, Classe B e Classe C) apresentaram sucesso, com 100% dos pacotes sendo recebidos.
+
+No entanto, ao realizar os testes entre computadores de redes distintas, observamos uma consistente perda de 1 pacote. Este padrão sugere que pode haver um desafio específico na comunicação inter-redes, possivelmente atribuível a configurações de roteamento ou outros fatores de infraestrutura.
+
+## Testes de no modo simulação do Packet Tracer
+
+<img src="./assets/s-1_1.gif" style="margin-bottom:30px;"   alt="Organização" >
+<br />
+<img src="./assets/s-1_2.gif"   alt="Organização" >
+
+## Conclusão do Cenário Proposto:
+
+Após a configuração e implementação da rede para a Empresa EHNOS, os testes de ping realizados ofereceram insights cruciais sobre a conectividade e desempenho. No âmbito das redes internas (Classe A, B e C), os resultados demonstraram uma comunicação robusta, evidenciada pelo recebimento de 100% dos pacotes, indicando uma sólida configuração intra-rede.
+
+No entanto, ao realizar os testes entre computadores de redes distintas, foi observada uma perda consistente de 1 pacote. Esse comportamento aponta para possíveis desafios na interconexão das redes, como configurações de roteamento ou políticas de segurança entre as classes de redes.
